@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title><%= gif.name %> GIF</title>
+    <link rel="stylesheet" href="">
+  </head>
+  <body>
+    <header>
+      <h1><%= gif.name %></h1>
+    </header>
+
+          <div class="gif-container">
+
+            <img src="<%= gif.url %>" alt="<%= gif.name %>">
+            <p>Likes: <%= gif.likes %></p>
+
+            <form action="/gif/<%= gif.id %>/like?_method=PUT" method="POST">
+              <input type="submit" value="LIKE">
+            </form>
+
+            <form action="/gif/<%= gif.id %>/edit" method="GET">
+              <input type="submit" value="EDIT" >
+            </form>
+
+
+            <form action="/gif/<%= gif.id %>?_method=DELETE" method="POST">
+              <input type="submit" value="DELETE">
+            </form>
+
+
+
+
+          </div>
+
+
+
+
+
+
+  </body>
+</html>

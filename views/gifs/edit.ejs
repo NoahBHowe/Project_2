@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title><%= gif.name %> GIF</title>
+    <link rel="stylesheet" href="">
+  </head>
+  <body>
+  <main>
+    <header>
+      <h1>Edit Your Gif</h1>
+    </header>
+      <section>
+
+      <form action="/gif/<%= gif.id %>?_method=PUT" method="POST">
+        <label for="gif[name]">NAME</label><br>
+        <input type="text" name="gif[name]" value="<%= gif.name %>"><br>
+        <label for="gif[url]">URL</label><br>
+        <input type="text" name="gif[url]" value="<%= gif.url %>"><br>
+        <input type="submit" value="EDIT GIF">
+      </form>
+
+
+
+
+      </section>
+
+
+
+    </main>
+  </body>
+</html>

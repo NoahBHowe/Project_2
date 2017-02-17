@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>FAVORITE GIFS</title>
+    <link rel="stylesheet" href="">
+  </head>
+  <body>
+  <main>
+    <header>
+      <h1>FAVORITE GIFS</h1>
+    </header>
+  <section>
+    <a href="/gif/new">ADD NEW GIF</a>
+    <% gifs.forEach((gif) => {%>
+
+    <div class="gif-container">
+
+      <h2><%= gifs.name %></h2>
+
+      <a href="/gif/<%= gif.id %>">
+         <img src="<%= gif.url %>" alt="<%= gif.name %>">
+      </a>
+
+
+
+
+      <p>LIKES: <%= gif.likes %></p>
+
+      <form action="/gif/<%= gif.id %>/like?_method=PUT" method="POST">
+        <input type="submit" value="LIKE">
+      </form>
+
+    </div>
+    <%})%>
+  </section>
+
+
+
+  </main>
+  </body>
+</html>
