@@ -1,5 +1,5 @@
 const router = require('express').Router();
 
-router.use('/gif', require('./controllers/gif_controller'));
+router.use('/ink', require('./controllers/'));
 
 module.exports = router;

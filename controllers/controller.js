@@ -1,56 +1,56 @@
-const Gif = require('../../models/gif');
+const Ink = require('../../models/ink');
 const controller = {};
 
 controller.index = (req, res) => {
-  Gif
+  Ink
     .findAll()
-    .then(data => res.render('gifs/index', {gifs: data}))
+    .then(data => res.render('ink/index', {ink: data}))
     .catch(err => console.log('Error:', err));
 }
 
 controller.new = (req, res) => {
-  res.render('gifs/new');
+  res.render('ink/new');
 }
 
 controller.show = (req, res) => {
-  Gif
+  Ink
     .findById(req.params.id)
-    .then(data => res.render('gifs/show', {gif: data}))
+    .then(data => res.render('ink/show', {ink: data}))
     .catch(err => console.log('ERROR:', err));
 }
 
 controller.create = (req, res) => {
-  Gif
-    .save(req.body.gif)
-    .then(() => res.redirect('/gif'))
+  Ink
+    .save(req.body.ink)
+    .then(() => res.redirect('/ink'))
     .catch(err => console.log('ERROR:', err));
 }
 
 controller.update = (req, res) => {
-  Gif
-    .update(req.body.gif, req.params.id)
-    .then(data => res.redirect('/gif'))
+  Ink
+    .update(req.body.ink, req.params.id)
+    .then(data => res.redirect('/ink'))
     .catch(err => console.log('ERROR:', err));
 }
 
 controller.edit = (req, res) => {
-  Gif
+  Ink
   .findById(req.params.id)
-  .then( data => res.render('gifs/edit', {gif: data}))
+  .then( data => res.render('ink/edit', {ink: data}))
   .catch(err => console.log('ERROR:', err));
 }
 
 controller.destroy = (req, res) => {
-  Gif
+  Ink
     .destroy(req.params.id)
-    .then(() => res.redirect('/gif'))
+    .then(() => res.redirect('/ink'))
     .catch(err => console.log('ERROR:', err));
 }
 
 controller.like = (req, res) => {
-  Gif
+  Ink
     .like(req.params.id)
-    .then(() => res.redirect('/gif'))
+    .then(() => res.redirect('/ink'))
     .catch(err => console.log('ERROR:', err));
 }
 

@@ -1,20 +1,33 @@
 {
   "name": "gif_lab",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Noah Burleigh Howe",
+  "license": "MIT",
   "dependencies": {
     "body-parser": "^1.16.1",
-    "ejs": "^2.5.5",
+    "ejs": "^2.5.6",
     "express": "^4.14.1",
+    "express-timestamp": "^0.1.4",
+    "marked": "^0.3.6",
     "method-override": "^2.3.7",
     "morgan": "^1.8.1",
     "path": "^0.12.7",
-    "pg-promise": "^5.5.6"
-  }
+    "pg-promise": "^5.5.6",
+    "scrollmagic": "^2.0.5",
+    "time-stamp": "^1.0.1"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NoahBHowe/project_one.git"
+  },
+  "bugs": {
+    "url": "https://github.com/NoahBHowe/project_one/issues"
+  },
+  "homepage": "https://github.com/NoahBHowe/project_one#readme",
+  "description": ""
 }

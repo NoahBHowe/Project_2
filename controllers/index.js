@@ -4,6 +4,8 @@ const controller = require('./controller');
 
 router.put('/:id/like', controller.like);
 
+router.put('/:id/time', controller.time);
+
 router.get('/:id/edit', controller.edit);
 
 router.get('/new', controller.new);

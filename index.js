@@ -7,7 +7,10 @@ app.use(logger('dev'));
 app.set('view engine', 'ejs');
 app.set('views', './views');
 
-const methodOverride        = require('method-override');
+const time                   = require('express-timestamp')
+app.use(time.init);
+
+const methodOverride         = require('method-override');
 app.use(methodOverride('_method'));
 
 const path                   = require('path');
