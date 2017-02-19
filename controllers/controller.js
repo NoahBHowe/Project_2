@@ -1,4 +1,4 @@
-const Ink = require('../../models/ink');
+const Ink = require('../models/ink');
 const controller = {};
 
 controller.index = (req, res) => {

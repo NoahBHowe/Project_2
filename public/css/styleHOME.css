@@ -1,0 +1,27 @@
+body {
+  border-radius: 89px 10px 89px 10px;
+  -moz-border-radius: 89px 10px 89px 10px;
+  -webkit-border-radius: 89px 10px 89px 10px;
+  border: 0px solid #000000;
+  border: 10px double #BA160C;
+  -webkit-box-shadow: 13px 17px 44px 1px rgba(138,55,138,0.71);
+  -moz-box-shadow: 13px 17px 44px 1px rgba(138,55,138,0.71);
+  box-shadow: 13px 17px 44px 1px rgba(138,55,138,0.71);
+  background-color: #F04A00;
+  display: flex;
+  flex-direction: column;
+
+/*  #00ff00;  <--hex code for terminal green*/
+}
+
+header {
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  text-align: center;
+  line-height: 20px;
+}
+
+#master_blaster_flex {
+  height: 900px;
+  width: 100vw;
+  border: 10px black solid;
+}
