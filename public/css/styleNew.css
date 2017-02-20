@@ -1,0 +1,203 @@
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: #FFFFFE;
+  border-radius: 20px 0px 0px 20px;
+-moz-border-radius: 20px 0px 0px 20px;
+-webkit-border-radius: 20px 0px 0px 20px;
+border: 7px groove #717476;
+
+/*  #00ff00;  <--hex code for terminal green*/
+/*  #FF4F00; <--hex code for international orange non bridge        */
+}
+
+header {
+  height: 23vh;
+  text-align: center;
+  background: #dedede;
+  background: -moz-linear-gradient(-45deg, #dedede 16%, #dedede 23%, #d6d6d6 47%, #d4d4d4 65%, #cfcfcf 100%);
+  background: -webkit-gradient(left top, right bottom, color-stop(16%, #dedede), color-stop(23%, #dedede), color-stop(47%, #d6d6d6), color-stop(65%, #d4d4d4), color-stop(100%, #cfcfcf));
+  background: -webkit-linear-gradient(-45deg, #dedede 16%, #dedede 23%, #d6d6d6 47%, #d4d4d4 65%, #cfcfcf 100%);
+  background: -o-linear-gradient(-45deg, #dedede 16%, #dedede 23%, #d6d6d6 47%, #d4d4d4 65%, #cfcfcf 100%);
+  background: -ms-linear-gradient(-45deg, #dedede 16%, #dedede 23%, #d6d6d6 47%, #d4d4d4 65%, #cfcfcf 100%);
+  background: linear-gradient(135deg, #dedede 16%, #dedede 23%, #d6d6d6 47%, #d4d4d4 65%, #cfcfcf 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#dedede', endColorstr='#cfcfcf', GradientType=1);
+  opacity: .9;
+  border: 5px groove #5E5B63;
+  border-radius: 14px 0px 0px 0px;
+  -moz-border-radius: 14px 0px 0px 0px;
+  -webkit-border-radius: 14px 0px 0px 0px;
+
+/*  color: #EAD916;*/
+
+}
+/*deepshadow and retroshadow(below) are  really nifty text shadow designs by Jorge Epuñan, and taken from: http://codepen.io/juanbrujo/pen/yGpAK
+*/
+.deepshadow {
+  font-family: "Avant Garde", sans-serif;
+  font-size: 42px;
+/*  padding: 80px 50px;*/
+  text-align: center;
+  text-transform: uppercase;
+  color: #e0dfdc;
+  /*background-color: #333;*/
+  letter-spacing: .1em;
+  text-shadow:
+      0 1px 0 #fff,
+      0 1px 0 #2e2e2e,
+      0 2px 0 #2c2c2c,
+      0 3px 0 #2a2a2a,
+      0 4px 0 #282828,
+      0 5px 0 #262626,
+      0 6px 0 #242424,
+      0 7px 0 #222,
+      0 8px 0 #202020,
+      0 9px 0 #1e1e1e,
+      0 10px 0 #1c1c1c,
+      0 11px 0 #1a1a1a,
+      0 12px 0 #181818,
+      0 13px 0 #161616,
+      0 14px 0 #141414,
+      0 15px 0 #121212,
+      0 22px 30px rgba(0, 0, 0, 0.9);
+  }
+
+.retroshadow {
+  font-family: "Avant Garde", sans-serif;
+  font-size: 32px;
+/*  padding: 80px 50px;*/
+  text-align: center;
+  text-transform: uppercase;
+  color: #2c2c2c;
+/*  background-color: #d5d5d5;*/
+  letter-spacing: .05em;
+  text-shadow:
+      4px 4px 0px #d5d5d5,
+      7px 7px 0px rgba(0, 0, 0, 0.2);
+  }
+
+
+
+
+
+
+header:hover {
+  background: #b3dced;
+  background: -moz-linear-gradient(45deg, #b3dced 0%, #29b8e5 35%, #529ebd 60%, #778899 82%);
+  background: -webkit-gradient(left bottom, right top, color-stop(0%, #b3dced), color-stop(35%, #29b8e5), color-stop(60%, #529ebd), color-stop(82%, #778899));
+  background: -webkit-linear-gradient(45deg, #b3dced 0%, #29b8e5 35%, #529ebd 60%, #778899 82%);
+  background: -o-linear-gradient(45deg, #b3dced 0%, #29b8e5 35%, #529ebd 60%, #778899 82%);
+  background: -ms-linear-gradient(45deg, #b3dced 0%, #29b8e5 35%, #529ebd 60%, #778899 82%);
+  background: linear-gradient(45deg, #b3dced 0%, #29b8e5 35%, #529ebd 60%, #778899 82%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#b3dced', endColorstr='#778899', GradientType=1);
+
+}
+
+#titleBar {
+  text-align: center;
+  padding: 20px;
+  line-height: 20px;
+  height: 20vh;
+  letter-spacing: .1em;
+  text-transform: lowercase;
+  font-family: 'helvetica', sans-serif;
+
+}
+
+#titleBar:hover {
+  font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+  text-shadow: -4px 4px 0px #7A787C;
+}
+
+#master_blaster_flex {
+  height: 900px;
+  display: flex;
+  flex-direction: column;
+  flex: -1;
+}
+
+#flexcanvas{
+  width: 100%;
+  height: 900px !important;
+  border: 5px groove #5E5B63;
+}
+
+.rowParent, .columnParent{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-direction: normal;
+  -webkit-box-orient: horizontal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-align-content: stretch;
+  -ms-flex-line-pack: stretch;
+  align-content: stretch;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  border: 5px groove #5E5B63;
+}
+
+.columnParent {
+  -webkit-box-orient: vertical;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  border: 5px groove #5E5B63;
+}
+
+.flexChild {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-align-self: auto;
+  -ms-flex-item-align: auto;
+  align-self: auto;
+  border: 5px solid #5E5B63;
+}
+
+
+#textBox {
+ -webkit-box-flex: 0;
+ -webkit-flex: 0 0 auto;
+ -ms-flex: 0 0 auto;
+ flex: 0 0 auto;
+ width: 65vw;
+ height: 65vh;
+ border: 5px solid #5E5B63;
+}
+
+
+#sideBar {
+ -webkit-box-flex: 0;
+ -webkit-flex: 0 0 auto;
+ -ms-flex: 0 0 auto;
+ flex: 0 0 auto;
+ width: 15vw;
+ height: 65vh;
+ border: 5px solid #5E5B63;
+}
+
+
+#newHeader {
+ -webkit-box-flex: 0;
+ -webkit-flex: 0 0 auto;
+ -ms-flex: 0 0 auto;
+ flex: 0 0 auto;
+ height: 13vh;
+ width: 96vw;
+ border: 5px solid #5E5B63;
+}
+

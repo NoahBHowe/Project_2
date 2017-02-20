@@ -26,7 +26,7 @@ Ink.update = (ink, id) => {
       SET
         title     = $1,
         category  = $2,
-        article   = $3
+        article   = $3,
     WHERE id = $4`,
     [ink.title, ink.category, ink.article, id]
     );

@@ -1,31 +1,37 @@
 body {
-  border-radius: 89px 10px 89px 10px;
-  -moz-border-radius: 89px 10px 89px 10px;
-  -webkit-border-radius: 89px 10px 89px 10px;
-  border: 0px solid #000000;
-  border: 10px double #BA160C;
-  -webkit-box-shadow: 13px 17px 44px 1px rgba(138,55,138,0.71);
-  -moz-box-shadow: 13px 17px 44px 1px rgba(138,55,138,0.71);
-  box-shadow: 13px 17px 44px 1px rgba(138,55,138,0.71);
-  background-color: black;
-
+  display: flex;
+  flex-direction: column;
 
 /*  #00ff00;  <--hex code for terminal green*/
+/*  #FF4F00; <--hex code for international orange non bridge        */
 }
 
 header {
-background: rgba(255,9,0,1);
-background: -moz-linear-gradient(-45deg, rgba(255,9,0,1) 0%, rgba(255,34,31,1) 14%, rgba(227,3,3,1) 33%, rgba(224,0,0,1) 35%, rgba(224,0,0,1) 47%, rgba(230,0,0,1) 61%, rgba(230,0,0,1) 62%, rgba(230,0,0,1) 69%, rgba(224,198,0,1) 93%);
-background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(255,9,0,1)), color-stop(14%, rgba(255,34,31,1)), color-stop(33%, rgba(227,3,3,1)), color-stop(35%, rgba(224,0,0,1)), color-stop(47%, rgba(224,0,0,1)), color-stop(61%, rgba(230,0,0,1)), color-stop(62%, rgba(230,0,0,1)), color-stop(69%, rgba(230,0,0,1)), color-stop(93%, rgba(224,198,0,1)));
-background: -webkit-linear-gradient(-45deg, rgba(255,9,0,1) 0%, rgba(255,34,31,1) 14%, rgba(227,3,3,1) 33%, rgba(224,0,0,1) 35%, rgba(224,0,0,1) 47%, rgba(230,0,0,1) 61%, rgba(230,0,0,1) 62%, rgba(230,0,0,1) 69%, rgba(224,198,0,1) 93%);
-background: -o-linear-gradient(-45deg, rgba(255,9,0,1) 0%, rgba(255,34,31,1) 14%, rgba(227,3,3,1) 33%, rgba(224,0,0,1) 35%, rgba(224,0,0,1) 47%, rgba(230,0,0,1) 61%, rgba(230,0,0,1) 62%, rgba(230,0,0,1) 69%, rgba(224,198,0,1) 93%);
-background: -ms-linear-gradient(-45deg, rgba(255,9,0,1) 0%, rgba(255,34,31,1) 14%, rgba(227,3,3,1) 33%, rgba(224,0,0,1) 35%, rgba(224,0,0,1) 47%, rgba(230,0,0,1) 61%, rgba(230,0,0,1) 62%, rgba(230,0,0,1) 69%, rgba(224,198,0,1) 93%);
-background: linear-gradient(135deg, rgba(255,9,0,1) 0%, rgba(255,34,31,1) 14%, rgba(227,3,3,1) 33%, rgba(224,0,0,1) 35%, rgba(224,0,0,1) 47%, rgba(230,0,0,1) 61%, rgba(230,0,0,1) 62%, rgba(230,0,0,1) 69%, rgba(224,198,0,1) 93%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff0900', endColorstr='#e0c600', GradientType=1 );
-font-family: ;
-/*totally rad red and yellow gradient for possible use*/
-
+  font-family: 'Oswald', sans-serif;
+  line-height: 20px;
+  height: 15vh;
+  text-align: center;
+  background-color: #100C6D;
+  color: #EAD916;
 }
 
 
+header:hover {
+  bac
+}
 
+
+#titleBar {
+  text-align: center;
+  padding: 20px;
+  line-height: 20px;
+  height: 10vh;
+}
+
+#titleBar:hover {
+
+}
+
+#master_blaster_flex {
+  height: 900px;
+}

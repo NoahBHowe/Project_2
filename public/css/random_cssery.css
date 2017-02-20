@@ -1,0 +1,67 @@
+body {
+  border-radius: 89px 10px 89px 10px;
+  -moz-border-radius: 89px 10px 89px 10px;
+  -webkit-border-radius: 89px 10px 89px 10px;
+  border: 0px solid #000000;
+  border: 10px double #BA160C;
+  -webkit-box-shadow: 13px 17px 44px 1px rgba(138,55,138,0.71);
+  -moz-box-shadow: 13px 17px 44px 1px rgba(138,55,138,0.71);
+  box-shadow: 13px 17px 44px 1px rgba(138,55,138,0.71);
+  background-color: #F04A00;
+  display: flex;
+  flex-direction: column;
+
+/*  #00ff00;  <--hex code for terminal green*/
+/*  #FF4F00; <--hex code for international orange non bridge        */
+}
+
+header {
+  background-color: #0C5DA5;
+  font-family: 'Oswald', sans-serif;
+  line-height: 20px;
+  height: 15vh;
+  border-radius: 78px 10px 0px 0px;
+  -moz-border-radius: 78px 10px 0px 0px;
+  -webkit-border-radius: 78px 10px 0px 0px;
+  border: 5px double #FFC200;
+/*  font-weight: bold;*/
+  text-align: center;
+  text-shadow: 0px 3px 0px rgba(255, 255, 255.8);
+
+}
+
+header:hover {
+  border-radius: 78px 10px 0px 0px;
+  -moz-border-radius: 78px 10px 0px 0px;
+  -webkit-border-radius: 78px 10px 0px 0px;
+  border: 23px double rebeccapurple;
+  background-color: #100C6D;
+  color: #EAD916;
+}
+
+#titleBar {
+  text-align: center;
+  padding: 20px;
+  line-height: 20px;
+  height: 10vh;
+  border-radius: 10px 10px 10px 10px;
+  -moz-border-radius: 10px 10px 10px 10px;
+  -webkit-border-radius: 10px 10px 10px 10px;
+  border: 5px double #FFC200;
+/*  font-weight: bold;*/
+  text-shadow: 0px 3px 0px rgba(255, 255, 255.8);
+  background-color: #0C5DA5;
+}
+
+#titleBar:hover {
+
+
+}
+
+#master_blaster_flex {
+  height: 900px;
+  border: 5px double #FF4F00;
+  border-radius: 0px 10px 78px 78px;
+  -moz-border-radius: 0px 10px 78px 78px;
+  -webkit-border-radius: 0px 10px 78px 78px;
+}

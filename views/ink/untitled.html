@@ -1,0 +1,6 @@
+   <h2>Current Splotches!</h2>
+                <% ink.forEach((ink) => {%>
+                    <h3><a class="linkClass" href="/ink/<%= ink.id %>">
+                        <%= ink.title%></a>
+                      </h3>
+                    <%})%>

@@ -1,0 +1,28 @@
+  <section>
+    <a href="/ink/new">ADD NEW GIF</a>
+    <% gifs.forEach((ink) => {%>
+
+    <div class="gif-container">
+
+      <h2><%= gifs.name %></h2>
+
+      <a href="/gif/<%= gif.id %>">
+         <img src="<%= gif.url %>" alt="<%= gif.name %>">
+      </a>
+
+
+
+
+      <p>LIKES: <%= gif.likes %></p>
+
+      <form action="/gif/<%= gif.id %>/like?_method=PUT" method="POST">
+        <input type="submit" value="LIKE">
+      </form>
+
+    </div>
+    <%})%>
+  </section>
+
+
+
+
