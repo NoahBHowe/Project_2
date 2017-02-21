@@ -1,7 +1,7 @@
 const Ink = require('../models/ink');
 const controller = {};
 const timestamp = require('time-stamp');
-
+const marked    = require('marked');
 
 controller.index = (req, res) => {
   Ink
@@ -22,8 +22,9 @@ controller.show = (req, res) => {
 }
 
 controller.create = (req, res) => {
+  let funkyBunch = marked(req.body.ink.article)
   Ink
-    .save(req.body.ink, timestamp('MM/DD/YYYY'))
+    .save(req.body.ink, timestamp('MM/DD/YYYY'), funkyBunch)
     .then(() => res.redirect('/ink'))
     .catch(err => console.log('ERROR:', err));
 }

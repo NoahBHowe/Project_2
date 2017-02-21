@@ -5,6 +5,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Ink-- Home</title>
   <link rel="stylesheet" href="/css/styleEdit.css">
+    <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Oswald|Rubik+Mono+One|Stalinist+One" rel="stylesheet">
   <link rel="shortcut icon" href="favicon.ico" type="image/vnd.microsoft.icon">
   <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
@@ -29,18 +34,13 @@
 
       <div id="newHeader" class="flexChild">
         <h1>YOU ARE INKING: <%=ink.title%></h1>
-
-
       </div>
 
             <div id="fullbarIgnore" class="flexChild rowParent">
             <div id="sideBar" class="flexChild, sideBarClass">
 
-            <h3><%=ink.title%></h3>
-            <h3>It was last edited: <%= ink.stamp%></h3>
-             <h3><% const popular = function () {ink.likes > 10 ? 'this article is well liked': 'this article is not particularly well liked'};
-                    popular(); %></h3>
-
+           <h3><%=ink.title%> was last edited: <%= ink.stamp%></h3>
+           <h3><%= ink.likes > 10 ? 'this article is well liked': 'this article is not particularly well liked';%></h3>
 
             </div>
 

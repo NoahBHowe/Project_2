@@ -19,9 +19,10 @@
 
 
 
-        <header>
+        <header>       <a href="/ink">
           <h1 class="deepshadow">Ink</h1>
           <h3 class="retroshadow">Wrap Your Tentacles 'Round Some Knowledge!</h3>
+          </a>
         </header>
 
 
@@ -36,11 +37,10 @@
             <div id="fullbarIgnore" class="flexChild rowParent">
             <div id="sideBar" class="flexChild, sideBarClass">
 
-            <h3><%=ink.title%></h3>
-            <h3>It was last edited: xxxxxxx[timestamp]</h3>
-             <h3><%
-             const popular = function () {ink.likes > 10 ? 'this article is well liked': 'this article is not particularly well liked'};
-                    popular(); %></h3>
+
+            <h4><%=ink.title%> was last edited: <%= ink.stamp%> <br>
+            and <%= ink.likes > 10 ? 'this article is well liked': 'this article is not particularly well liked';%></h4>
+
 
          <!-- SEE UNTITLED FOR ERROR TROUBLESHOOT! -->
             </div>
