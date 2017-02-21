@@ -190,7 +190,7 @@ header:hover {
  width: 15vw;
  height: 65vh;
  border: 5px solid #5E5B63;
- background-color: #F3EFE0;
+
 }
 
 
@@ -230,6 +230,8 @@ header:hover {
   text-transform: lowercase;
   opacity: 0.8;
   filter: alpha(opacity=50);
+  background-url: http://api.thumbr.it/whitenoise-361x370.png?;   /*<-courtesy of http://www.cssmatic.com/noise-texture*/
+background=4ea6caff&noise=626262&density=100&opacity=100;
 }
 
 .sideBarClass:hover {

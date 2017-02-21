@@ -1,5 +1,5 @@
 // Establish PSQL Database Congifuration
-const pgp             = require('pg-promise')();
+const pgp            = require('pg-promise')();
 const connection      = 'postgres://localhost:5432/ink';
 const database        = pgp(connection);
 
