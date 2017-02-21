@@ -26,25 +26,26 @@
 
 
 
-        <header>
+      <header>
+          <!-- <iframe  width="480" height="270" src="http://www.ustream.tv/embed/9600798?html5ui" scrolling="no"  frameborder="0" style="border: 0 none transparent;" z-index:"0 "></iframe>-->
+
+          <div class="desperado">
           <h1 class="deepshadow">Ink</h1>
           <h3 class="retroshadow">Wrap Your Tentacles 'Round Some Knowledge!</h3>
-        </header>
-
+        </div>
+      </header>
 
     <div id="container" class="flexChild columnParent">
 
       <div id="newHeader" class="flexChild">
-        <h1>Inkipedia Home Page <br>
-
-      </h1>
-
+        <h1>Inkipedia Home Page</h1>
       </div>
 
           <div id="fullbarIgnore" class="flexChild rowParent">
 
             <div id="sideBar" class="flexChild">
-                <h4 id="smallHeader" >Current Splotches!</h4>
+            <h5 class="smallHeader"><a href="/ink/new">NEW WIKI!</a></h5>
+                <h4 class="smallHeader" >Current Splotches!</h4>
                   <% ink.forEach((ink) => {%>
                     <h3><a class="linkClass" href="/ink/<%= ink.id %>">
                         <%= ink.title%></a>
@@ -53,7 +54,7 @@
             </div>
 
             <div id="textBox" class="flexChild selected">
-              <a href="/ink/new">ADD A NEW WIKI!</a>
+
                 <% ink.forEach((ink) => {%>)
               <a href="/ink/<%= ink.id %>">
               <h2><%= ink.title%></h2>
