@@ -4,7 +4,7 @@ CREATE TABLE wiki (
   title VARCHAR (255) NOT NULL,
   category VARCHAR (255) NOT NULL,
   article  TEXT NOT NULL,
-  -- time  TIMESTAMP NOT NULL,
+  stamp  TEXT NOT NULL,
   likes INTEGER DEFAULT 0);
 
 

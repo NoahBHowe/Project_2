@@ -52,7 +52,7 @@
               </a>
 
               <h4><%= ink.category%></h4>
-              <p><%= ink.article%></p>
+              <p><%= ink.article%> <br><%=ink.stamp%></p>
               <p>Likes: <%= ink.likes %></p>
             <form action="/ink/<%= ink.id %>/like?_method=PUT" method="POST">
             <input type="submit" value="LIKE">

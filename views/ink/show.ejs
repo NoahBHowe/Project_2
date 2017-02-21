@@ -34,8 +34,15 @@
       </div>
 
             <div id="fullbarIgnore" class="flexChild rowParent">
-            <div id="sideBar" class="flexChild">
+            <div id="sideBar" class="flexChild, sideBarClass">
 
+            <h3><%=ink.title%></h3>
+            <h3>It was last edited: xxxxxxx[timestamp]</h3>
+             <h3><%
+             const popular = function () {ink.likes > 10 ? 'this article is well liked': 'this article is not particularly well liked'};
+                    popular(); %></h3>
+
+         <!-- SEE UNTITLED FOR ERROR TROUBLESHOOT! -->
             </div>
 
             <div id="textBox" class="flexChild selected">

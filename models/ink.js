@@ -33,12 +33,12 @@ Ink.update = (ink, id) => {
 }
 
 
-Ink.save = (ink) => {
+Ink.save = (ink, time) => {
   return db.none(`
     INSERT INTO wiki
-    (title, category, article)
-    VALUES ($1, $2, $3)`,
-    [ink.title, ink.category, ink.article]
+    (title, category, article, stamp)
+    VALUES ($1, $2, $3, $4)`,
+    [ink.title, ink.category, ink.article,time]
     );
 }
 
@@ -46,14 +46,6 @@ Ink.like = (id) => {
   return db.none(`
     UPDATE wiki
     SET likes = likes+1
-    WHERE id = $1`, [id]
-    );
-}
-
-Ink.time = (id) => {
-  return db.none(`
-    UPDATE wiki
-    SET time = timestamp
     WHERE id = $1`, [id]
     );
 }

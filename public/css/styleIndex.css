@@ -10,6 +10,7 @@ border: 7px groove #717476;
 /*  #00ff00;  <--hex code for terminal green*/
 /*  #FF4F00; <--hex code for international orange non bridge        */
 /*  #6c7a86; a nice steel color*/
+/*#100C6D; a lovely deep blue*/
 }
 
 header {
@@ -189,6 +190,7 @@ header:hover {
  width: 15vw;
  height: 65vh;
  border: 5px solid #5E5B63;
+ background-color: #F3EFE0;
 }
 
 
@@ -214,10 +216,31 @@ header:hover {
   font-family: "helvetica neue", sans-serif;
   color: #ffd700;
   font-size: 19px;
-
-
-
-
-
 }
+
+.sideBarClass {
+  text-align: left;
+  font-family: "arial", sans-serif;
+  color: #D6DCF0;
+ /*a nice steel color*/
+  font-size: 15px;
+/*  font-kerning: .05em;*/
+  padding-right: 5px;
+  text-transform: lowercase;
+  opacity: 0.8;
+  filter: alpha(opacity=50);
+}
+
+.sideBarClass:hover {
+  text-align: justify;
+  font-family: "helvetica neue", sans-serif;
+  color: #61748C;
+ /*a nice steel color*/
+  font-size: 13px;
+/*  font-kerning: .05em;*/
+/*  padding: 10px;*/
+  letter-spacing: .1em;
+  text-transform: initial;
+}
+
 

@@ -1,32 +1,70 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <title><%= gif.name %> GIF</title>
-    <link rel="stylesheet" href="">
-  </head>
-  <body>
-  <main>
-    <header>
-      <h1>Edit Your Gif</h1>
-    </header>
-      <section>
-
-      <form action="/gif/<%= gif.id %>?_method=PUT" method="POST">
-        <label for="gif[name]">NAME</label><br>
-        <input type="text" name="gif[name]" value="<%= gif.name %>"><br>
-        <label for="gif[url]">URL</label><br>
-        <input type="text" name="gif[url]" value="<%= gif.url %>"><br>
-        <input type="submit" value="EDIT GIF">
-      </form>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Ink-- Home</title>
+  <link rel="stylesheet" href="/css/styleEdit.css">
+  <link href="https://fonts.googleapis.com/css?family=Oswald|Rubik+Mono+One|Stalinist+One" rel="stylesheet">
+  <link rel="shortcut icon" href="favicon.ico" type="image/vnd.microsoft.icon">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.21/jquery-ui.min.js" type="text/javascript"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js" type="text/javascript"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/mootools/1.4.5/mootools-yui-compressed.js" type="text/javascript"></script>
+  <script src="/javascript/app.js"></script>
+</head>
+<body>
 
 
 
+        <header>
+          <h1 class="deepshadow">Ink</h1>
+          <h3 class="retroshadow">Wrap Your Tentacles 'Round Some Knowledge!</h3>
+        </header>
 
-      </section>
+
+    <div id="container" class="flexChild columnParent">
+
+      <div id="newHeader" class="flexChild">
+        <h1>YOU ARE INKING: <%=ink.title%></h1>
+
+
+      </div>
+
+            <div id="fullbarIgnore" class="flexChild rowParent">
+            <div id="sideBar" class="flexChild, sideBarClass">
+
+            <h3><%=ink.title%></h3>
+            <h3>It was last edited: <%= ink.stamp%></h3>
+             <h3><% const popular = function () {ink.likes > 10 ? 'this article is well liked': 'this article is not particularly well liked'};
+                    popular(); %></h3>
+
+
+            </div>
+
+            <div id="textBox" class="flexChild selected">
+                <form action="/ink/<%= ink.id %>?_method=PUT" method="POST" name="textboxName">
+                  <label for="ink[title]">TITLE</label><br>
+                  <input type="text" name="ink[title]" value="<%= ink.title %>"><br>
+
+                  <label for="ink[category]">Category</label><br>
+                  <input type="text" name="ink[category]" value="<%= ink.category %>"><br>
+
+                  <label for="ink[article]">Article</label><br>
+                  <textarea type="text" id="textStyled" name="ink[article]" value="<%= ink.article %>" form="textboxName" name="" id="" cols="30" rows="10"></textarea>
 
 
 
-    </main>
-  </body>
+                  <input type="submit" value="EDIT SPLOTCH">
+                </form>
+
+
+
+            </div>
+        </div>
+    </div>
+
+</body>
 </html>

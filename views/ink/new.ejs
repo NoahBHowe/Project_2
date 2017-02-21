@@ -40,7 +40,7 @@
             <div id="sideBar" class="flexChild"></div>
 
             <div id="textBox" class="flexChild selected">
-                    <form action="/ink" method="POST">
+                    <form action="/ink" form="newBox" method="POST">
 
                 <label id="titleBoxNew" for="title">Title</label><br>
                 <input type="text" name="ink[title]"><br>
@@ -50,6 +50,11 @@
 
                 <label id="textBoxNew" for="article">Article Text</label><br>
                 <input type="text" name="ink[article]"><br>
+
+
+                <label for="ink[article]">Article</label><br>
+                <textarea type="text" id="textStyled" name="ink[article]" form="newBox" id="textStyle2" cols="30" rows="10"></textarea>
+
 
               <!--   <label id="timeStamp" for="time">Time Stamp</label><br>
                 <input type="text" name="ink[time]"><br> -->
