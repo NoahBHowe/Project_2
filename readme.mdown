@@ -34,6 +34,7 @@ I approached this by breaking down the assignment into its component parts--and 
 4. As a user I should be able to see what time pages were last edited (created or edited)
 5. As a user I should be able to like a page, and see how many likes the page has
 
+
 ##How-to-Use!
 "NEW WIKI" brings you to ink/new, allowing you to create a new wiki in markdown format. "Submit" adds the form contents to the sql databse (wiki), and brings you back to the home page. It also populates the side bar with a list of the current wikis, with clickable links.
 
@@ -45,8 +46,15 @@ Clicking on one of these links takes you a separate page for the wiki itself, al
 
 I was not able to succesfully implement scroll-magic or increase the functionality of materialize by adding a jquery function that would allow the creation of pull quotes within a markdown document, but I was able to identify _where_ in the extensive library's code that would go.
 
-Additionally, I would have liked to have solved embedding a live octopus cam feed into the header _beneath_ the title text. Videos seem to compromise z-index functionality.
+Additionally, I would have liked to have solved embedding a live octopus cam feed into the header _beneath_ the title text. Videos seem to compromise z-index functionality. I had the video set to play the Stevie Wonder classic "My Cherie Amour" on load of the page (with a simultaneous autostart of the Monterry Bay Aquarium Octopus livefeed), however with the video over-riding z-index functions, I deeemd it unnecessary until I could get it to work. (6. As a user I should be able to watch a video of an octopus swimming across the page to the sultry sounds of Stevie Wonder.)
+
+
 
 ##Where To Go From Here:
 
-I would like to add user functionality (node sessions). I also had extensive artwork that I would like to add to the page as well as accompanying animations for the artwork.
+I would like to add user functionality (node sessions). I also had extensive artwork that I would like to add to the page as well as accompanying animations for the artwork. There is also a nifty npm for word count that I would like to get to work even though I would have to nest it within Marked.
+
+##Mockups
+1. Mockup One: [Imgur](http://i.imgur.com/i0mSwkP.jpg) This is a mockup of the show and home page--minus the sidebar but demonstrating the essential features of the page.
+2. Mockup Two: [Imgur](http://i.imgur.com/GgAg7uK.jpg) This is a mockup of the edit and create pages--minus the sidebar but demonstrating the essential features of the page. Note also the petulant octopus intended to be wrapping his tentacle while the user typed. Pending the successful animation of that feature, I withheld it.
+
