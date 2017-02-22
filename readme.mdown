@@ -42,6 +42,8 @@ Clicking on one of these links takes you a separate page for the wiki itself, al
 
 "Edit" allows you to edit each of the form contents (except for time and likes), writing your wiki in markdown format.
 
+To download code, please fork, then git clone into the desired folder. After, cd into the cloned folder and type 'npm install'. Following this type 'nodemon' and go to address 'localhost:3000/ink'.Thank you for using Ink---the web's foremost digital wiki ostensibly devoted to cephalopods.
+
 ##Unsolved problems:
 
 I was not able to succesfully implement scroll-magic or increase the functionality of materialize by adding a jquery function that would allow the creation of pull quotes within a markdown document, but I was able to identify _where_ in the extensive library's code that would go.
