@@ -57,4 +57,5 @@ I would like to add user functionality (node sessions). I also had extensive art
 ##Mockups
 1. Mockup One: [Imgur](http://i.imgur.com/i0mSwkP.jpg) This is a mockup of the show and home page--minus the sidebar but demonstrating the essential features of the page.
 2. Mockup Two: [Imgur](http://i.imgur.com/GgAg7uK.jpg) This is a mockup of the edit and create pages--minus the sidebar but demonstrating the essential features of the page. Note also the petulant octopus intended to be wrapping his tentacle while the user typed. Pending the successful animation of that feature, I withheld it.
+3. Wireframe 1: [Imgur](http://i.imgur.com/UyrzSDi.png). Finally, the finished iteration with sidebar, sub headers and double headers.
 
