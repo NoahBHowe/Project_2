@@ -5,18 +5,19 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Ink-- Home</title>
   <link rel="stylesheet" href="/css/styleEdit.css">
-    <!-- Compiled and minified CSS -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
 
-  <!-- Compiled and minified JavaScript -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Oswald|Rubik+Mono+One|Stalinist+One" rel="stylesheet">
-  <link rel="shortcut icon" href="favicon.ico" type="image/vnd.microsoft.icon">
+
   <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
   <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.21/jquery-ui.min.js" type="text/javascript"></script>
   <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js" type="text/javascript"></script>
+   <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
   <script src="//ajax.googleapis.com/ajax/libs/mootools/1.4.5/mootools-yui-compressed.js" type="text/javascript"></script>
   <script src="/javascript/app.js"></script>
 </head>
@@ -25,8 +26,10 @@
 
 
         <header>
+          <a href="/ink/">
           <h1 class="deepshadow">Ink</h1>
           <h3 class="retroshadow">Wrap Your Tentacles 'Round Some Knowledge!</h3>
+          </a>
         </header>
 
 
@@ -37,10 +40,10 @@
       </div>
 
             <div id="fullbarIgnore" class="flexChild rowParent">
-            <div id="sideBar" class="flexChild, sideBarClass">
+            <div id="sideBar" class="flexChild, sideBarClass ">
 
-           <h3><%=ink.title%> was last edited: <%= ink.stamp%></h3>
-           <h3><%= ink.likes > 10 ? 'this article is well liked': 'this article is not particularly well liked';%></h3>
+            <h3 class="linkClass" ><%=ink.title%> was last edited: <br><%= ink.stamp%></h3>
+            <h3 class="linkClass"><%= ink.likes > 10 ? 'this article is well liked': 'this article is not particularly well liked';%></h3>
 
             </div>
 
@@ -53,14 +56,14 @@
                   <input type="text" name="ink[category]" value="<%= ink.category %>"><br>
 
                   <label for="ink[article]">Article</label><br>
-                  <textarea type="text" id="textStyled" name="ink[article]" value="<%= ink.article %>" form="textboxName" name="" id="" cols="30" rows="10"></textarea>
+                  <textarea type="text" id="textStyled" name="ink[article]" id="newBox" value="<%= ink.article%>" cols="30" rows="10"></textarea>
 
 
 
                   <input type="submit" value="EDIT SPLOTCH">
                 </form>
 
-
+                <p>`${Furthermore, if you want to create a pull quote, try bracketing your text in <q id=\quote\></q>}`</p>
 
             </div>
         </div>

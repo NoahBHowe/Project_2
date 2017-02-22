@@ -170,6 +170,7 @@ header {
  border-top: 4px #ccc double;
  border-left: 4px #ccc double;
 /* border: 2px ridge #5E5B63;*/
+
 }
 
 
@@ -257,7 +258,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#499bea', end
 }
 
 .sideBarClass {
-  text-align: left;
+  text-align: justify;
   font-family: "arial", sans-serif;
   color: #D6DCF0;
  /*a nice steel color*/
@@ -280,15 +281,16 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#499bea', end
 }
 
 .sideBarClass:hover {
-  text-align: justify;
+  text-align: center;
   font-family: "helvetica neue", sans-serif;
   color: #61748C;
+  text-shadow: ;
  /*a nice steel color*/
   font-size: 10px;
 /*  font-kerning: .05em;*/
 /*  padding: 10px;*/
-  letter-spacing: .1em;
   text-transform: initial;
+  text-shadow: 0px 7px 9px rgba(130, 130, 130, 0.88);
 }
 
 #fullbarIgnore {
@@ -296,13 +298,21 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#499bea', end
   border-top: 4px #ccc double;
   border-left: 4px #ccc double;
   background-color: #cfcfcf, opacity: .4;
-
+}
 .smallHeader {
   text-align: center;
-  text-shadow: 0px 7px 9px rgba(130, 130, 130, 0.88);
 }
 
 .smallHeader:hover {
   color: #BA160C;
+  text-shadow: 0px 7px 9px rgba(130, 130, 130, 0.88);
 }
+
+/*#videoOcto {
+    object-fit: fill;
+    width: 75vw;
+    height: 65vh;
+    line-height: 20px;
+
+}*/
 

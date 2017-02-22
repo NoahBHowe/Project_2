@@ -5,27 +5,29 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Ink-- Home</title>
   <link rel="stylesheet" href="/css/styleIndex.css">
-     <!-- Compiled and minified CSS -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
-
-  <!-- Compiled and minified JavaScript -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
-
   <link href="https://fonts.googleapis.com/css?family=Oswald|Rubik+Mono+One|Stalinist+One" rel="stylesheet">
   <link rel="shortcut icon" href="favicon.ico" type="image/vnd.microsoft.icon">
   <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
-  <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.21/jquery-ui.min.js" type="text/javascript"></script>
+
   <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js" type="text/javascript"></script>
+    <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
   <script src="//ajax.googleapis.com/ajax/libs/mootools/1.4.5/mootools-yui-compressed.js" type="text/javascript"></script>
+   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.21/jquery-ui.min.js" type="text/javascript"></script>
+  <script>document.getElementById('content').innerHTML = marked('# Marked in browser\n\nRendered by **marked**.')</script>
   <script src="/javascript/app.js"></script>
 </head>
 <body>
 
 
 
-        <header>       <a href="/ink">
+        <header>
+        <a href="/ink">
           <h1 class="deepshadow">Ink</h1>
           <h3 class="retroshadow">Wrap Your Tentacles 'Round Some Knowledge!</h3>
           </a>
@@ -44,8 +46,8 @@
             <div id="sideBar" class="flexChild, sideBarClass">
 
 
-            <h4><%=ink.title%> was last edited: <%= ink.stamp%> <br>
-            and <%= ink.likes > 10 ? 'this article is well liked': 'this article is not particularly well liked';%></h4>
+            <h3 class="linkClass" ><%=ink.title%> was last edited: <br><%= ink.stamp%></h3>
+            <h3 class="linkClass"><%= ink.likes > 10 ? 'this article is well liked': 'this article is not particularly well liked';%></h3>
 
 
          <!-- SEE UNTITLED FOR ERROR TROUBLESHOOT! -->

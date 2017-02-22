@@ -22,7 +22,8 @@ controller.show = (req, res) => {
 }
 
 controller.create = (req, res) => {
-  let funkyBunch = marked(req.body.ink.article)
+  const funkyBunch = marked(req.body.ink.article)
+
   Ink
     .save(req.body.ink, timestamp('MM/DD/YYYY'), funkyBunch)
     .then(() => res.redirect('/ink'))
