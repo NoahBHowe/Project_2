@@ -160,9 +160,20 @@ header {
  -ms-flex: 0 0 auto;
  flex: 0 0 auto;
  width: 75vw;
- height: 75vh;
- background: #fff;
+ height: 85vh;
+
+ border-top: 4px #ccc double;
+ border-left: 4px #ccc double;
+ background: #ebe9f9;
+background: -moz-linear-gradient(45deg, #ebe9f9 0%, #d8d0ef 36%, #cec7ec 51%, #c1bfea 100%);
+background: -webkit-gradient(left bottom, right top, color-stop(0%, #ebe9f9), color-stop(36%, #d8d0ef), color-stop(51%, #cec7ec), color-stop(100%, #c1bfea));
+background: -webkit-linear-gradient(45deg, #ebe9f9 0%, #d8d0ef 36%, #cec7ec 51%, #c1bfea 100%);
+background: -o-linear-gradient(45deg, #ebe9f9 0%, #d8d0ef 36%, #cec7ec 51%, #c1bfea 100%);
+background: -ms-linear-gradient(45deg, #ebe9f9 0%, #d8d0ef 36%, #cec7ec 51%, #c1bfea 100%);
+background: linear-gradient(45deg, #ebe9f9 0%, #d8d0ef 36%, #cec7ec 51%, #c1bfea 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ebe9f9', endColorstr='#c1bfea', GradientType=1 );
 /* border: 2px ridge #5E5B63;*/
+
 }
 
 
@@ -172,7 +183,7 @@ header {
  -ms-flex: 0 0 auto;
  flex: 0 0 auto;
  width: 15vw;
- height: 75vh;
+ height: 85vh;
 /* border: 2px ridge #5E5B63;*/
   background: #dedede;
   background: -moz-linear-gradient(-45deg, #dedede 16%, #dedede 23%, #d6d6d6 47%, #d4d4d4 65%, #cfcfcf 100%);
@@ -284,6 +295,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#499bea', end
 
 #fullbarIgnore {
   background-color: #fff;
+  height: 85vh;
 }
 
 #smallHeader {
