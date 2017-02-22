@@ -23,6 +23,7 @@ controller.show = (req, res) => {
 
 controller.create = (req, res) => {
   const funkyBunch = marked(req.body.ink.article)
+  console.log(funkyBunch);
 
   Ink
     .save(req.body.ink, timestamp('MM/DD/YYYY'), funkyBunch)
