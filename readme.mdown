@@ -8,18 +8,17 @@
 4. Markeddown
 5. SQL
 6. Node Packages:
-  a. body-parser
-  b. ejs
-  c. express
-  d. express-timestamp
-  e. marked
-  f. method-override
-  g. morgan
-  h. path
-  i. pg-promises
-  j. scrollmagic
-  k. time-stamp
-  l. materialize
+  a. body-parser         -->gleans requested information from amidst the dross of meta data
+  b. ejs                 -->allows the user to write javascript into an html styled doc
+  c. express             -->framework that allows users to augment code with middleware and routing
+  e. marked              -->allows a browser to render marked down
+  f. method-override     -->overrides the .method property with a different value
+  g. morgan              -->enables logging of console activitiy
+  h. path                -->provides utility for working with directory paths
+  i. pg-promises         -->allows connection and communication with postgres databases
+  j. scrollmagic         -->not used successfully, but allows for more elegant/efficient scrolling
+  k. time-stamp          -->puts a time stamp on activity
+  l. materialize         -->style set used for elegant text windows and polite styles.
 
 
 ##Approach Taken:
