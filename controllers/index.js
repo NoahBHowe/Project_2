@@ -9,8 +9,8 @@ router.put('/:id/like', controller.like);
 
 router.get('/:id/edit', controller.edit);
 
-router.get('/:id', controller.show);
 router.get('/new', controller.new);
+router.get('/:id', controller.show);
 
 
 router.delete('/:id', controller.destroy);

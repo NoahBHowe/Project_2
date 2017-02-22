@@ -1,0 +1,52 @@
+#INK!
+###TENTACLES FOR KNOWLEDGE
+
+##Technologies Used:
+1. jQuery, CSS
+2. Google chrome (esp the developer tools)
+3. Express
+4. Markeddown
+5. SQL
+6. Node Packages:
+  a. body-parser
+  b. ejs
+  c. express
+  d. express-timestamp
+  e. marked
+  f. method-override
+  g. morgan
+  h. path
+  i. pg-promises
+  j. scrollmagic
+  k. time-stamp
+  l. materialize
+
+
+##Approach Taken:
+I approached this by breaking down the assignment into its component parts--and then selecting required, achievable and then stretch goals, sorting and prioritizing accoridngly. I
+
+
+
+##User Stories:
+1. As a user I should be able to see which wikis are on the site
+2. As a user I should be able to add pages to the site
+3. As a user I should be able to edit pages that have been written
+4. As a user I should be able to see what time pages were last edited (created or edited)
+5. As a user I should be able to like a page, and see how many likes the page has
+
+##How-to-Use!
+"NEW WIKI" brings you to ink/new, allowing you to create a new wiki in markdown format. "Submit" adds the form contents to the sql databse (wiki), and brings you back to the home page. It also populates the side bar with a list of the current wikis, with clickable links.
+
+Clicking on one of these links takes you a separate page for the wiki itself, allowing you to like the page, edit it or delete it, all together.
+
+"Edit" allows you to edit each of the form contents (except for time and likes), writing your wiki in markdown format.
+
+##Unsolved problems:
+
+I was not able to succesfully implement scroll-magic or increase the functionality of materialize by adding a jquery function that would allow the creation of pull quotes within a markdown document, but I was able to identify _where_ in the extensive library's code that would go.
+
+Additionally, I would have liked to have solved embedding a live octopus cam feed into the header _beneath_ the title text. Videos seem to compromise z-index functionality.
+
+##Where To Go From Here:
+
+I would like to add user functionality (node sessions). I also had extensive artwork that I would like to add to the page as well as accompanying animations for the artwork.
