@@ -61,5 +61,5 @@ I would like to add user functionality (node sessions). I also had extensive art
 4. Logo sketch 1: [Imgur](http://i.imgur.com/xmFkJYt.jpg). Roger, ink's mascot.
 5. Goals sketch: [Imgur](http://i.imgur.com/NKjwrOD.jpg).
 6. ERD (up top) and one of the last remaining images of SquidZero-a short lived diet squid soda made nd bottled in Schenectady, NY.
-4. Wireframe 1: [Imgur](http://i.imgur.com/UyrzSDi.png). Finally, the finished iteration with sidebar, sub headers and double headers.
+7. Wireframe 1: [Imgur](http://i.imgur.com/UyrzSDi.png). Finally, the finished iteration with sidebar, sub headers and double headers.
 
